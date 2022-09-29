@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Item = (props) => {
-  const { id, title, category, price, img, desc } = props
+  const { id, title, price, img, desc } = props
 
   return (
     <article className='menu-item' key={id}>
@@ -11,7 +11,7 @@ const Item = (props) => {
           <h4>{title}</h4>
           <h4>${price}</h4>
         </div>
-        s<p className='item-text'>{desc}</p>
+        <p className='item-text'>{desc}</p>
       </div>
     </article>
   )
